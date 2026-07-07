@@ -1,0 +1,1 @@
+alert("Welcome to our first link website with JS")
