@@ -1,0 +1,1 @@
+alert("We learn how we upload the images")
