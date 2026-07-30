@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 21</title>
+    <style>
+        /* We learn this selector value through harry tutorial */
+        /* The specificity of this selector is 1 */
+        h2 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 1+10 */
+        h2.yellow {
+            color: blue;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cred {
+            color: tomato;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: yellowgreen;
+        }
+
+        /*This is an example of attribute. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: maroon;
+        }
+        /* In this a is element .harryclass is class .rohan-class is also class [href] is attribute if apply before and hover is pseudo */
+        /* The specificity of this selector is 1+10+10+10+10=41 */
+        a.harryclass.rohan-class[href]:hover {
+            color: rgb(156, 54, 144);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>We learn about CSS specificity and cascade</h1>
+    <div>
+        <h2 class="yellow cred cpurple" data-x="a">CSS Specificity</h2>
+    </div>
+    
+</body>
+
+</html>
